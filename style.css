@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Bicyclette', Helvetica, sans-serif;
+    background-color: #f3f3f3;
+}
+
+.echipa{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 160rem;
+    padding-top: 5rem;
+    background-image: url(media/Asset\ 4.png);
+    background-position: top 0% right;
+    background-repeat: no-repeat;
+    background-size: 12rem;
+}
+
+.teamTable{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.onerow{
+    position: absolute;
+    z-index: 10;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.nameJob h5{
+    margin-top: 2rem;
+    font-weight: normal;
+    font-size: 12pt;
+    text-transform: uppercase;
+    text-align: center;
+    color: #363636;
+    letter-spacing: 0.04rem;
+}
+.nameJob p{
+    margin-top: 0.3rem;
+    font-weight: normal;
+    font-size: 10pt;
+    text-transform: uppercase;
+    color: #adadad;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    letter-spacing: 0.04rem;
+}
+
+p.description{
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*when clicked*/
+#memberBox ,#memberBoxAlex, #memberBoxLiv, #memberBoxFlo , #memberBoxOvi , #memberBoxDen , #memberBoxRaz, #memberBoxAnc, #memberBoxGab, #memberBoxMih, #memberBoxRal,#memberBoxLuc,#memberBoxDel,#memberBoxMel,#memberBoxSte, #memberBoxGeo,
+#memberBoxCri,#memberBoxCrs,#memberBoxAle,#memberBoxAnd,#memberBoxSim, #memberBoxDan, #memberBoxRau, #memberBoxInv  {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 21%;
+    align-items: center;
+    width: 15rem;
+    max-height: 24rem;
+    padding-top: 3rem;
+    overflow: hidden;
+    filter: grayscale(100%);
+    /* transition open member box*/
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0,7s;
+    transition: all 0,7s;
+}
+
+#memberBox.open, #memberBoxAlex.open,  #memberBoxLiv.open , #memberBoxFlo.open,  #memberBoxOvi.open , #memberBoxDen.open , #memberBoxRaz.open, #memberBoxAnc.open, #memberBoxGab.open, #memberBoxMih.open, #memberBoxRal.open,#memberBoxLuc.open,#memberBoxDel.open,#memberBoxMel.open,#memberBoxSte.open, #memberBoxGeo.open,
+#memberBoxCri.open, #memberBoxDan.open, #memberBoxRau.open {
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+#memberBox.open img, #memberBoxAlex.open img ,  #memberBoxLiv.open img, #memberBoxFlo.open img,  #memberBoxOvi.open img, #memberBoxDen.open img, #memberBoxRaz.open img, #memberBoxAnc.open img, #memberBoxGab.open img, #memberBoxMih.open img, #memberBoxRal.open img ,#memberBoxLuc.open img ,#memberBoxDel.open img,#memberBoxMel.open img,#memberBoxSte.open img, #memberBoxGeo.open img, 
+#memberBoxCri.open img, #memberBoxDan.open img, #memberBoxRau.open img{
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+
+#memberBoxDan.open .description, #memberBoxRau.open .description,#memberBoxSte.open .description,#memberBox.open .description, #memberBoxAlex.open .description ,#memberBoxLiv.open .description, #memberBoxFlo.open .description, #memberBoxOvi.open .description , #memberBoxDen.open .description , #memberBoxRaz.open .description, #memberBoxAnc.open .description, #memberBoxGab.open .description, #memberBoxMih.open .description, #memberBoxRal.open .description,#memberBoxLuc.open .description,#memberBoxDel.open .description,#memberBoxMel.open .description,
+#memberBoxCri.open .description,#memberBoxCrs.open .description,#memberBoxAle.open .description,#memberBoxAnd.open .description,#memberBoxSim.open .description, #memberBoxGeo.open .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    z-index: 1;
+    background-color: #ffffff;
+    letter-spacing: 0.04rem;
+    opacity: 90%;
+    line-height: 1.2rem;
+    padding: 0 1rem 0 1rem; 
+    font-weight: lighter;
+    font-size: 11.5pt;
+    color:#212121;
+    line-height: 1.35rem;
+    text-align: center;
+}
+
+#memberBox.open .nameJob, #memberBoxAlex.open .nameJob,  #memberBoxLiv.open .nameJob, #memberBoxFlo.open .nameJob,  #memberBoxOvi.open .nameJob, #memberBoxDen.open .nameJob, #memberBoxRaz.open .nameJob, #memberBoxAnca .open.nameJob,#memberBoxAnc.open .nameJob ,#memberBoxAnc.open .nameJob , #memberBoxGab.open .nameJob ,  #memberBoxMih.open .nameJob , #memberBoxRal.open .nameJob ,#memberBoxLuc.open .nameJob ,#memberBoxDel.open .nameJob ,#memberBoxMel.open .nameJob ,#memberBoxSte.open .nameJob , #memberBoxGeo.open .nameJob, 
+#memberBoxCri.open .nameJob ,#memberBoxCrs.open .nameJob ,#memberBoxAle.open .nameJob ,#memberBoxAnd.open .nameJob ,#memberBoxSim.open .nameJob, #memberBoxDan.open .nameJob, #memberBoxRau.open .nameJob {
+    width: 100%;
+    height: 100%;
+}
+#memberBox img, #memberBoxAlex img, #memberBoxLiv img, #memberBoxFlo img, #memberBoxOvi img, #memberBoxDen img, #memberBoxRaz img, #memberBoxAnca img, #memberBox img,#memberBoxAnc img,  #memberBoxAnc img, #memberBoxGab img, #memberBoxMih img, #memberBoxRal img,#memberBoxLuc img,#memberBoxDel img,#memberBoxMel img,#memberBoxSte img, #memberBoxGeo img, 
+#memberBoxCri img,#memberBoxCrs img,#memberBoxAle img,#memberBoxAnd img,#memberBoxSim img, #memberBoxDan img,#memberBoxRau img {
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    object-position: 100% 20%;
+}
+#memberBox:hover, #memberBoxAlex:hover, #memberBoxLiv:hover, #memberBoxFlo:hover , #memberBoxOvi:hover , #memberBoxDen:hover , #memberBoxRaz:hover , #memberBoxAnca:hover, #memberBoxAnc:hover, #memberBoxAnc:hover, #memberBoxGab:hover, #memberBoxMih:hover, #memberBoxRal:hover,#memberBoxLuc:hover,#memberBoxDel:hover,#memberBoxMel:hover,#memberBoxSte:hover, #memberBoxGeo:hover, 
+#memberBoxCri:hover,#memberBoxCrs:hover,#memberBoxAle:hover,#memberBoxAnd:hover,#memberBoxSim:hover,#memberBoxDan:hover,#memberBoxRau:hover {
+    cursor: pointer;
+    filter: grayscale(0%)
+}
+
+#memberBoxCrs.open,#memberBoxAle.open,#memberBoxAnd.open,#memberBoxSim.open{
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+
+#memberBox.opacity:hover, #memberBoxAlex.opacity:hover, #memberBoxLiv.opacity:hover, #memberBoxFlo.opacity:hover , #memberBoxOvi.opacity:hover , #memberBoxDen.opacity:hover , #memberBoxRaz.opacity:hover, #memberBoxAnc.opacity:hover, 
+#memberBoxGab.opacity:hover, #memberBoxMih.opacity:hover,#memberBoxRal.opacity:hover,#memberBoxLuc.opacity:hover,#memberBoxDel.opacity:hover,#memberBoxMel.opacity:hover,#memberBoxSte.opacity:hover,#memberBoxGeo.opacity:hover, #memberBoxCri.opacity:hover,
+#memberBoxCrs.opacity:hover,#memberBoxAle.opacity:hover,#memberBoxAnd.opacity:hover,#memberBoxSim.opacity:hover,#memberBoxDan.opacity:hover, #memberBoxRau.opacity:hover{
+    opacity: 1;
+}
+
+#memberBox.opacity, #memberBoxAlex.opacity, #memberBoxLiv.opacity, #memberBoxFlo.opacity , #memberBoxOvi.opacity , #memberBoxDen.opacity , #memberBoxRaz.opacity, #memberBoxAnc.opacity, 
+#memberBoxGab.opacity, #memberBoxMih.opacity,#memberBoxRal.opacity,#memberBoxLuc.opacity,#memberBoxDel.opacity,#memberBoxMel.opacity,#memberBoxSte.opacity, #memberBoxGeo.opacity, #memberBoxCri.opacity,
+#memberBoxCrs.opacity,#memberBoxAle.opacity,#memberBoxAnd.opacity,#memberBoxSim.opacity,#memberBoxDan.opacity, #memberBoxRau.opacity{
+    opacity: 0.5;
+}
+
+
+
+
+#Exitclick.open{
+    width: 100%;
+    height: 100%;
+}
